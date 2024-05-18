@@ -84,7 +84,6 @@ func New(options ...DeckOption) []Card {
 			}
 		}
 	}
-	fmt.Println(cards)
 	cards = applyOptions(cards, opt)
 	return cards
 }
