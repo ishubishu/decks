@@ -129,14 +129,12 @@ func contains(slice []string, str string) bool {
 	return false
 }
 
-func main() {
-	deck := New(
-		WithShuffle(),
-		WithJokers(2),
-		WithFilterRanks([]string{"2", "3"}), // Filter out 2s and 3s
-		WithComposedDeck(3),                 // Create a deck composed of 3 standard decks
-	)
+// func main() {
+// 	New(
+// 		WithShuffle(),
+// 		WithJokers(2),
+// 		WithFilterRanks([]string{"2", "3"}), // Filter out 2s and 3s
+// 		WithComposedDeck(3),                 // Create a deck composed of 3 standard decks
+// 	)
 
-	fmt.Println(deck)
-
-}
+// }
